@@ -13,7 +13,9 @@ def BlogView(request):
 def DetailView(request,post):
    post=get_list_or_404(Post,slug=post,status='published')
    
-   context={}
+   context={
+   'post':post
+   }
    return render(request ,'blog_app/detail.html',context)
  
  
