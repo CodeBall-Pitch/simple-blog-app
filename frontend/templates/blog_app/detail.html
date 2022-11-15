@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{%  load static %}
+{% block  title  %}Blog View {%  endblock title %}
+{%  block content %}
+
+
+  {{post.title}}
+  {{post.content}}
+  {{post.slug}}
+{% endblock content %}
