@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'core',
     'blog_app',
-    'accounts'
+    'accounts',
+    'bulk_sms'
 ]
 
 MIDDLEWARE = [
