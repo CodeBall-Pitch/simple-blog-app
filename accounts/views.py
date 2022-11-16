@@ -8,7 +8,7 @@ def AccountView(request):
         subject=request.POST.get('subject')
         message=request.POST.get('message')
         email=request.POST.get('email')
-        send_mail(subject,message,email,settings.EMAIL_HOST_USER, [email],fail_silently=False)
+        send_mail(subject,message,settings.EMAIL_HOST_USER, [email],fail_silently=False)
         return render(request,'accounts/sent.html',{'email':email}) 
     context={}
     return render(request,'accounts/mail.html')
